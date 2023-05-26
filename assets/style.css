@@ -1,80 +1,65 @@
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  ul.navbar {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-  }
-  
-  ul.navbar li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  ul.navbar li a {
-    text-decoration: none;
-  }
-  
-  /* Basketball card styles */
-  section#basketball {
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  section#basketball h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  div.basketball-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  p.team1,
-  p.team2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  /* Baseball card styles */
-  section#baseball {
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  section#baseball h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  div.baseball-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  p.team1,
-  p.team2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-  }
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Navbar styles */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+ul.navbar li {
+  display: inline-block;
+  padding: 10px;
+}
+
+ul.navbar li a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #ddd;
+}
+
+/* Basketball card styles */
+section#basketball {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.basketball-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Baseball card styles */
+section#baseball {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.baseball-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
