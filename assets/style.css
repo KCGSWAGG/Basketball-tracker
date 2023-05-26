@@ -1,23 +1,80 @@
-ul.navbar {
-    list-style-type: none;
+
+  body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
   }
-
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  ul.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
   ul.navbar li {
-    float: left;
+    display: inline-block;
+    margin-right: 10px;
   }
-
+  
   ul.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
   }
-
-  ul.navbar li a:hover {
-    background-color: #111;
+  
+  /* Basketball card styles */
+  section#basketball {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  section#basketball h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  div.basketball-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  p.team1,
+  p.team2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Baseball card styles */
+  section#baseball {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  section#baseball h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  div.baseball-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  p.team1,
+  p.team2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
   }
