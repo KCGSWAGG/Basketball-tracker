@@ -10,26 +10,30 @@ var options = {
 };
 
 function getTeams() {
-	var requestUrl = 'https://footapi7.p.rapidapi.com/api/match/10200674';
-	console.log(Teams)
-
-	fetch(requestUrl)
+	console.log("working")
+	var requestUrl = 'https://footapi7.p.rapidapi.com/api/matches/live';
+	fetch(requestUrl, options)
 	.then(function (reponse) {
-		return reponse.json;
+		return reponse.json();
 	})
 	.then(function (data) {
 		console.log(data)
-		for (var i = 0; i < data.list.length; i+=2)
-		var game = data.list[i]
-		var match = document.createElement('div');
-		match.setAttribute("Class", "card");
-		var matchBody = document.createElement('div');
-		matchBody.setAttribute("Class", "matchBody");
-		match.appendChild(matchBody);
-		matchBody.appendChild("soccer-track-button")
+		for (var i = 0; i < data.events.length; i++){
+		var event = data.events[i]
+		console.log("The TimeStamp is", event.startTimestamp)
+		console.log("The home team is", event.homeTeam.name)
+		console.log("The away team is", event.awayTeam.name)}
+		// var game = data.list[i]
+		// var match = document.createElement('div');
+		// match.setAttribute("Class", "card");
+		// var matchBody = document.createElement('div');
+		// matchBody.setAttribute("Class", "matchBody");
+		// match.appendChild(matchBody);
+		// matchBody.appendChild("soccer-track-button")
 
 	})
-	document.getElementById("soccer-track-button").addEventListener("click", function (getTeams));
+	
 
 
 }
+document.querySelector("#soccer-track-button").addEventListener("click", getTeams)
