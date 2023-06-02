@@ -1,6 +1,6 @@
 .hero-body {
   width: 100%;
-    height: 100vh;
+    height: 75vh;
     background-image: url(/assets/images/futbol-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@
 
 .hero-body-baseball {
   width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url(/assets/images/baseball-stadium.jpg);
     background-size: cover;
     background-position: center;
@@ -16,15 +16,15 @@
 
 .hero-body-soccer {
   width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url(/assets/images/soccer-stadium.jpg);
     background-size: cover;
     background-position: center;
 }
-p {
+/* p {
   color: black;
 }
 
 .title-soccer {
   color: black;
-}
+} */
