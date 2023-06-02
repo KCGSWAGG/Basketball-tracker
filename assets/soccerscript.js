@@ -11,6 +11,7 @@ var options = {
 
 function getTeams() {
   console.log("working");
+  mainContentContainer.innerHTML = "";
   var requestUrl = "https://footapi7.p.rapidapi.com/api/matches/live";
   fetch(requestUrl, options)
     .then(function (reponse) {
@@ -30,10 +31,10 @@ function getTeams() {
         matchCard.setAttribute("class", "card");
         var matchBody = document.createElement("div");
         matchCard.innerHTML = `
-		<h2>date${unixFormat}</h2>
-		<p>homeTeam${event.homeTeam.name}</p>
-		<p>awayTeam${event.awayTeam.name}</p>
-		`;
+		  <h2>date ${unixFormat}</h2>
+		  <p>homeTeam ${event.homeTeam.name}</p>
+		  <p>awayTeam ${event.awayTeam.name}</p>
+		  `;
         matchCard.appendChild(matchBody);
         mainContentContainer.appendChild(matchCard);
       }
