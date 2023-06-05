@@ -18,6 +18,12 @@ Sports Tracker
 
 ![image](https://github.com/KCGSWAGG/sports-tracker/assets/129568159/95e8f8b1-afe2-4fa4-9859-0fb129338d93)
 
+## GitHub Pages and Repo Links
+
+[GitHub Pages](https://kcgswagg.github.io/sports-tracker/index.html)
+
+[Repo Link](https://github.com/KCGSWAGG/sports-tracker)
+
 
 ## Credits
 
