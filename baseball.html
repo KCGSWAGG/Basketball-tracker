@@ -1,105 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+		/>
+		<title>Baseball Game Tracker</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-  <script src="https://kit.fontawesome.com/bb3c3bb97f.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-  <title>Baseball Game Tracker</title>
-</head>
+	<body>
+		<!-- navbar  -->
+		<section>
+			<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+				<div class="container">
+					<div class="navbar-brand">
+						<a
+							role="button"
+							class="navbar-burger"
+							aria-label="menu"
+							aria-expanded="false"
+							data-target="navbarBasicExample"
+						>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</a>
+					</div>
+					<div id="navbarMenuHeroA" class="navbar-menu">
+						<div class="navbar-end">
+							<a class="navbar-item" href="index.html"> Home </a>
+							<a class="navbar-item is-active" href="baseball.html"> Baseball </a>
+							<a class="navbar-item" href="soccer.html"> Soccer </a>
+							<span class="navbar-item">
+								<a
+									class="button is-primary is-inverted"
+									href="https://github.com/KCGSWAGG/sports-tracker"
+								>
+									<span class="icon">
+										<i class="fab fa-github"></i>
+									</span>
+									<span>Baseball</span>
+								</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</nav>
 
-<body>
+			<!-- Hero content: will be in the middle -->
+			<div class="hero-body-baseball">
+				<div class="container has-text-centered">
+					<p class="title-baseball"></p>
+				</div>
+			</div>
+		</section>
 
-  <!-- navbar  -->
-  <section class="hero is-primary is-small">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <!-- <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-            </a> -->
-            <span class="navbar-burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active" href="index.html">
-                Home
-              </a>
-              <a class="navbar-item" href="baseball.html">
-                Baseball
-              </a>
-              <a class="navbar-item" href="soccer.html">
-                Soccer
-              </a>
-              <span class="navbar-item">
-                <a class="button is-primary is-inverted" href="https://github.com/KCGSWAGG/sports-tracker">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Baseball</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body-baseball">
-      <div class="container has-text-centered"> 
-         <p class="title-baseball">
-          Game Tracker
-         </p>
-      </div>
-    </div>
-  </section>
+		<!-- Content from service call goes here -->
+		<section class="section mb-2">
+			<div class="container">
+				<h1 class="title has-text-centered">Baseball Game Tracker</h1>
+				<div class="main-content">
+					<div class="completed-games-container">
+						<div class="completed-games"></div>
+					</div>
+					<div class="upcoming-games-container">
+						<div class="upcoming-games"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">Home</a>
-      <a class="navbar-item" href="soccer.html">Soccer</a>
-    </div>
-  </nav> -->
+		<!-- button section -->
+		<section>
+			<div class="track-clear-btns">
+				<button class="button is-primary is-pulled-left" id="baseball-track-button">
+					Track Games
+				</button>
+				<div id="baseball-game-details"></div>
+				<!-- have games show up here -->
+				<div class="baseball-game-matchup"></div>
+				<button
+					class="button is-primary button is-pulled-right"
+					id="baseball-clear-button"
+					input
+					type="reset"
+				>
+					Clear Games
+				</button>
+			</div>
+		</section>
+	</body>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Baseball Game Tracker</h1>
-      
-      <div class="card">
-        <div class="card-content">
-          <div class="main-content">
-            <p>Game Info</p>
-          </div>
-        </div>
-      </div>
-
-     <!-- <div class="card">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-        </figure>
-      </div>
-     </div> -->
-      <button class="button is-primary" id="baseball-track-button">Track Game</button>
-      <div id="baseball-game-details"></div> 
-    </div>
-  </section>
-
-  <div class="modal" id="game-modal">
-    <!-- Modal content here -->
-  </div>
-
-  <script src="assets/baseballscript.js"></script>
-</body>
-
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				<strong>Game Tracker</strong> by Andrew, Tyreal and Seth. The source code is licensed
+				<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is
+				licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+			</p>
+		</div>
+	</footer>
 </html>
+
+<script src="https://kit.fontawesome.com/bb3c3bb97f.js" crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+	integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+	crossorigin="anonymous"
+></script>
+<script src="assets/baseballscript.js"></script>
