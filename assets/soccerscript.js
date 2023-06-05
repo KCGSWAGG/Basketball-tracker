@@ -12,7 +12,7 @@ var requestUrl = `https://footapi7.p.rapidapi.com/api/matches/top/${currentDay}/
 var options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '404cb8548cmshdb04b9f931ecc25p14f062jsn3e6e88c1b722',
+		'X-RapidAPI-Key': '5c924b5375msh180d4c389c807a5p1dc70fjsnf2a6c9051cc7',
 		'X-RapidAPI-Host': 'footapi7.p.rapidapi.com'
 	}
 };
