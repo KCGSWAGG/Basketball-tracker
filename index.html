@@ -1,94 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
-    />
-    <script src="https://kit.fontawesome.com/bb3c3bb97f.js" crossorigin="anonymous"></script>
-    <title>Game Tracker</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+		/>
+		<script src="https://kit.fontawesome.com/bb3c3bb97f.js" crossorigin="anonymous"></script>
+		<title>Game Tracker</title>
+	</head>
 
-    <!-- navbar  -->
-    <section class="hero is-primary is-small">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <!-- <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-              </a> -->
-              <span class="navbar-burger" data-target="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item is-active">
-                  Home
-                </a>
-                <a class="navbar-item" href="baseball.html">
-                  Baseball
-                </a>
-                <a class="navbar-item" href="soccer.html">
-                  Soccer
-                </a>
-                <span class="navbar-item">
-                  <a class="button is-primary is-inverted" href="https://github.com/KCGSWAGG/sports-tracker">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Repo</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    
-      <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
-        <div class="container has-text-centered"> 
-           <p class="title">
-            Game Tracker
-           </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div id="main-area">
-        <div class="title">
-          <h1>Welcome to Game Tracker</h1>
-          <br>
-          <p>Please select a sport from the navigation above.</p> 
-          <!-- maybe add a cover image in this section -->
-        </div>
-      </div>
-    </div>
-    </section>
-
-    
-
-
-    
-  </body>
-  <!-- <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Game Tracker</strong> by Andrew. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
-    </div>
-  </footer> -->
+	<body>
+		<!-- Hero content: will be in the middle -->
+		<div class="hero-body-index">
+			<div class="container has-text-centered">
+				<h1 class="title has-text-white">Welcome to Game Tracker</h1>
+				<h2 class="subtitle has-text-white mb-5">
+					This website will allow you to track past and upcoming games for the top baseball and
+					soccer teams.
+				</h2>
+				<h2 class="subtitle has-text-white">Please select a sport below</h2>
+				<div class="has-text-centered">
+					<a
+						href="baseball.html"
+						class="button is-link mr-4 has-background-light has-text-black-bis is-size-5 baseball-btn"
+						>Baseball</a
+					>
+					<a
+						href="soccer.html"
+						class="button is-link has-background-light has-text-black-bis is-size-5 soccer-btn"
+						>Soccer</a
+					>
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				<strong>Game Tracker</strong> by Andrew, Tyreal and Seth. The source code is licensed
+				<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is
+				licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+			</p>
+		</div>
+	</footer>
 </html>
