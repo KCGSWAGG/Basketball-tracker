@@ -16,7 +16,8 @@ We learned how APIs and API keys work and how to implement them in functions suc
 
 Sports Tracker
 
-![image](https://github.com/KCGSWAGG/sports-tracker/assets/129568159/95e8f8b1-afe2-4fa4-9859-0fb129338d93)
+![landing-page-sport-tracker](https://github.com/KCGSWAGG/sports-tracker/assets/45980046/4f0f4ac4-766b-4f92-b5ab-7ad45768dda9)
+
 
 ## GitHub Pages and Repo Links
 
